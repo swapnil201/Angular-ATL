@@ -1,1 +1,0 @@
-This is a Project for Angular 201 Course - "Ant Time Library"
