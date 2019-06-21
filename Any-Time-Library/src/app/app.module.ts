@@ -1,8 +1,14 @@
+/** Angular Modules */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MatToolbarModule} from '@angular/material/toolbar';
 
+/** Material Modules*/
+import { MatToolbarModule } from '@angular/material';
+
+/** Module Components */
 import { AppComponent } from './app.component';
+
+/** Project Imported Modules */
 import { CommonModule } from './common/common.module';
 
 @NgModule({

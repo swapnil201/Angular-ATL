@@ -1,0 +1,10 @@
+.common-header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.lib-icon {
+    padding: 10px;
+}

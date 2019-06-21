@@ -1,0 +1,13 @@
+.card {
+    background-color: aliceblue;
+}
+
+.dboard-cards {
+    max-width: 400px;
+    min-width: 150px;
+    background-color: beige;
+}
+
+.card-buttons {
+    width: 100%;
+}
