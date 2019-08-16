@@ -10,13 +10,11 @@ import { AppComponent } from './app.component';
 
 /** Project Imported Modules */
 import { CommonModule } from './common/common.module';
-import { BookComponent } from './books/book/book.component';
 import { BookDetailsComponent } from './books/book-details/book-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookComponent,
     BookDetailsComponent
   ],
   imports: [
