@@ -10,4 +10,20 @@ export class Book {
     public issuedCopies: number; // number of currently issued copies of book
     public timesIssued: number; // number of times book is issued till now
     public issuedTo: string[];
+
+    constructor(isbn: string, title: string, description: string, author: string, 
+        genre: string, imgPath: string, rating: number, totalCopies: number, 
+        issuedCopies: number, timesIssued: number, issuedTo: string[] ){
+            this.isbn = isbn;
+            this.title = title;
+            this.description = description;
+            this.author = author;
+            this.genre = genre;
+            this.imgPath = imgPath;
+            this.rating = rating;
+            this.totalCopies = totalCopies;
+            this.issuedCopies = issuedCopies;
+            this.timesIssued = timesIssued;
+            this.issuedTo = issuedTo;
+        }
 }

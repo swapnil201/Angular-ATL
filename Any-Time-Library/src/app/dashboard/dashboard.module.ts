@@ -1,8 +1,10 @@
 /** Angular Modules */
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 /** Material Modules*/
-import { MatCardModule, MatButtonModule, MatDividerModule } from '@angular/material';
+import { MatCardModule, MatButtonModule, MatDividerModule, MatTabsModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
 
 /** Module Components */
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
@@ -19,7 +21,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatButtonModule,
     MatDividerModule,
-    FlexLayoutModule
+    MatTabsModule,
+    MatInputModule,
+    FormsModule,
+    FlexLayoutModule,
   ],
   exports: [
     UserDashboardComponent

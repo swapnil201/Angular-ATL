@@ -1,6 +1,7 @@
 /** Angular Modules */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 /** Material Modules */
 import { MatToolbarModule } from '@angular/material';
@@ -10,15 +11,15 @@ import { AppComponent } from './app.component';
 
 /** Project Imported Modules */
 import { CommonModule } from './common/common.module';
-import { BookDetailsComponent } from './books/book-details/book-details.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    BookDetailsComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     CommonModule,
     MatToolbarModule
   ],

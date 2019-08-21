@@ -11,6 +11,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserDashboardComponent implements OnInit {
 
+  value:string = "clear";
+
   constructor() { }
 
   ngOnInit() {

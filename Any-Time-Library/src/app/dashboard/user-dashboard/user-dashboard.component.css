@@ -17,3 +17,13 @@
 .dboard-img {
     background-color: beige;
 }
+
+.browse-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-field {
+    width: 100%;
+}
