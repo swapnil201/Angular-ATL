@@ -1,8 +1,8 @@
 export class Book {
     public isbn: string;
     public title: string;
-    public description: string; // description/preface of book
     public author: string;
+    public description: string; // description/preface of book
     public genre: string;
     public imgPath: string; // local path for image of book
     public rating: number;

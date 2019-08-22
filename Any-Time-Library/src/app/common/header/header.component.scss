@@ -1,11 +1,13 @@
+$padding-value: 10px;
+
 .common-header { 
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
 }
 
 .lib-icon {
-    padding: 10px;
+    padding: $padding-value;
 }
