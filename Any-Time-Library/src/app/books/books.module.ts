@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
 /** Material Modules*/
-import { MatCardModule, MatButtonModule, MatDividerModule, MatInputModule } from '@angular/material';
+import { MatCardModule, MatButtonModule, MatDividerModule, MatInputModule, MatIconModule } from '@angular/material';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 /** Flex Layout Module */
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -25,7 +26,10 @@ import { BrowseBooksComponent } from './browse-books/browse-books.component';
     MatButtonModule,
     MatDividerModule,
     MatInputModule,
-    FlexLayoutModule
+    MatInputModule,
+    MatIconModule,
+    FlexLayoutModule,
+    ScrollingModule
   ],
   exports: [
     BrowseBooksComponent

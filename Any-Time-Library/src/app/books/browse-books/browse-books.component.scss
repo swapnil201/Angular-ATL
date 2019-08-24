@@ -1,15 +1,13 @@
+$icon-padding: 0px;
 .card {
-    background-color: aliceblue;
-    background-image: url('src/assets/dboard-background.jpg');
+    background-color:aliceblue;
+    // background-image: url('src/assets/dboard-background.jpg');
     background-size: cover;   
 }
 
 .books-cards {
-    max-width: 60%;
-    min-width: 40%;
-    padding-top: 20%;
-    margin: 20%;
-    background-color: beige;
+    min-width: 250px;
+    padding: 1%;
 }
 
 .card-buttons {
@@ -17,11 +15,24 @@
 }
 
 .browse-form {
-    min-width: 150px;
-    max-width: 500px;
     width: 100%;
 }
 
 .search-field {
-    width: 100%;
+    width: 90%;
 }
+
+.lib-icon {
+    padding-top: $icon-padding;
+}
+
+.example-viewport {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+  }
+  
+  .example-item {
+    height: 50px;
+  }
+  
