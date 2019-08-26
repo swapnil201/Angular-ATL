@@ -1,8 +1,13 @@
-$icon-padding: 0px;
+$icon-padding: 10px;
+$full-width: 100%;
+$lt-full-width: 90%;
+
+@mixin bg($bg-color: rgb(245, 245, 245), $bg-size: cover) {
+    background-color: $bg-color;
+    background-size: $bg-size;
+}
 .card {
-    background-color:aliceblue;
-    // background-image: url('src/assets/dboard-background.jpg');
-    background-size: cover;   
+    @include bg;
 }
 
 .books-cards {
@@ -11,19 +16,15 @@ $icon-padding: 0px;
 }
 
 .card-buttons {
-    width: 100%;
+    width: $lt-full-width;
 }
 
 .browse-form {
-    width: 100%;
+    width: $full-width;
 }
 
 .search-field {
-    width: 90%;
-}
-
-.lib-icon {
-    padding-top: $icon-padding;
+    width: $lt-full-width;
 }
 
 .example-viewport {
@@ -36,3 +37,10 @@ $icon-padding: 0px;
     height: 50px;
   }
   
+  //Below class is used just to help Template identify the local image urls.
+  .images-urls {
+    background-image: url('src/assets/dboard-background.jpg');
+    background-image: url('src/assets/harry-potter.jpg');
+    background-image: url('src/assets/wings-of-fire.jpg');
+    background-image: url('src/assets/take-a-book.jpg');
+  }

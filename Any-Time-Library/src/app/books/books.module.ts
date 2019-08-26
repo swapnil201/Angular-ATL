@@ -14,6 +14,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { BookDetailsComponent } from './book-details/book-details.component';
 import { BrowseBooksComponent } from './browse-books/browse-books.component';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   declarations: [
     BookDetailsComponent,
@@ -29,7 +31,8 @@ import { BrowseBooksComponent } from './browse-books/browse-books.component';
     MatInputModule,
     MatIconModule,
     FlexLayoutModule,
-    ScrollingModule
+    ScrollingModule,
+    SharedModule
   ],
   exports: [
     BrowseBooksComponent

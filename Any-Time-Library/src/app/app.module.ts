@@ -10,7 +10,7 @@ import { MatToolbarModule } from '@angular/material';
 import { AppComponent } from './app.component';
 
 /** Project Imported Modules */
-import { CommonModule } from './common/common.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({
@@ -20,7 +20,7 @@ import { CommonModule } from './common/common.module';
   imports: [
     BrowserModule,
     FormsModule,
-    CommonModule,
+    DashboardModule,
     MatToolbarModule
   ],
   providers: [],

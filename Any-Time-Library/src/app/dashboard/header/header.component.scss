@@ -1,4 +1,4 @@
-$padding-value: 10px;
+$padding-value: 5px;
 
 .common-header { 
     position: fixed;
@@ -10,4 +10,8 @@ $padding-value: 10px;
 
 .lib-icon {
     padding: $padding-value;
+}
+
+.space {
+    flex: 1 1 auto;
 }

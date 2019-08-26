@@ -1,4 +1,5 @@
 export class Book {
+    public id: number;
     public isbn: string;
     public title: string;
     public author: string;
@@ -11,9 +12,10 @@ export class Book {
     public timesIssued: number; // number of times book is issued till now
     public issuedTo: string[];
 
-    constructor(isbn: string, title: string, description: string, author: string, 
+    constructor(id:number, isbn: string, title: string, description: string, author: string, 
         genre: string, imgPath: string, rating: number, totalCopies: number, 
         issuedCopies: number, timesIssued: number, issuedTo: string[] ){
+            this.id = id,
             this.isbn = isbn;
             this.title = title;
             this.description = description;

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BooksService } from '../books.service';
-import { Book } from '../book.model';
+import { BooksService } from '../../shared/books.service';
+import { Book } from '../../shared/book.model';
 import { throwError } from 'rxjs';
 
 @Component({
@@ -11,9 +11,9 @@ import { throwError } from 'rxjs';
 })
 export class BrowseBooksComponent implements OnInit {
 
-  constructor( private bookService: BooksService ) { }
+  constructor(private bookService: BooksService) { }
 
-  public books: any;
+  public books: Book[] = new Array<Book>();
 
   ngOnInit() {
     this.getBooks();
@@ -21,7 +21,9 @@ export class BrowseBooksComponent implements OnInit {
 
   getBooks() {
     this.bookService.getBooks().subscribe(
-      data => { this.books = data[0] },
+      data => { this.books = data[0] as Array<Book>;
+        console.log(data)
+      },
       err => console.error(err),
       () => console.log(this.books)
     );
