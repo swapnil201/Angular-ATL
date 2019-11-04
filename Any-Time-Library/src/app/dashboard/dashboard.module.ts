@@ -11,6 +11,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 /** Project Imported Modules */
 import { BooksModule } from '../books/books.module';
+import { AuthModule } from '../auth/auth.module';
+
+/** Routing module */
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 /** Module Components */
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
@@ -35,10 +39,11 @@ import { LayoutComponent } from '../dashboard/layout/layout.component';
     MatButtonModule,
     MatIconModule,
     FlexLayoutModule,
-    BooksModule
+    BooksModule,
+    AuthModule,
+    DashboardRoutingModule
   ],
   exports: [
-    UserDashboardComponent,
     LayoutComponent
   ]
 })

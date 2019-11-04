@@ -1,7 +1,8 @@
-$icon-padding: 10px;
+$padding: 2px;
 $full-width: 100%;
 $lt-full-width: 90%;
 
+//scss feature mixin used - to create reusable, funtion type assignments. 
 @mixin bg($bg-color: rgb(245, 245, 245), $bg-size: cover) {
     background-color: $bg-color;
     background-size: $bg-size;
@@ -12,10 +13,18 @@ $lt-full-width: 90%;
 
 .books-cards {
     min-width: 250px;
+    min-height: 360px;
     padding: 1%;
 }
 
+.books-cards-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
 .card-buttons {
+    padding: $padding;
     width: $lt-full-width;
 }
 
@@ -26,21 +35,11 @@ $lt-full-width: 90%;
 .search-field {
     width: $lt-full-width;
 }
-
-.example-viewport {
-    height: 100%;
-    width: 100%;
-    border: 1px solid black;
-  }
-  
-  .example-item {
-    height: 50px;
-  }
   
   //Below class is used just to help Template identify the local image urls.
-  .images-urls {
+.images-urls {
     background-image: url('src/assets/dboard-background.jpg');
     background-image: url('src/assets/harry-potter.jpg');
     background-image: url('src/assets/wings-of-fire.jpg');
     background-image: url('src/assets/take-a-book.jpg');
-  }
+}

@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>{{book.title}}</h1>
+<div mat-dialog-content>
+  <p>Description: {{book.description}}</p>
+  <p>Author: {{book.author}}</p>
+  <p>Genre: {{book.genre}}</p>
+  <p>Rating: {{book.rating}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial>BORROW</button>
+  <button mat-button mat-dialog-close>NO THANKS</button>
+</div>
